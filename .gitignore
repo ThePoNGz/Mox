@@ -1,0 +1,31 @@
+# MacOS
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Expo
+.expo/
+dist/
+web-build/
+.jsc/
+.npm/
+
+# Supabase
+supabase/functions/*/deno.d.ts
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+
+# Build
+/ios/Pods/
+/android/app/build/
+/android/.gradle/

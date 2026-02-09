@@ -1,0 +1,11 @@
+export interface SecureStorage {
+    getItem: (key: string) => Promise<string | null>;
+    setItem: (key: string, value: string) => Promise<void>;
+    removeItem: (key: string) => Promise<void>;
+}
+
+export const adapter: SecureStorage = {
+    getItem: async () => null,
+    setItem: async () => { },
+    removeItem: async () => { },
+};
