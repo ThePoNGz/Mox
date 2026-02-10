@@ -10,7 +10,7 @@ Planner agents must follow it exactly. No deviations without explicit approval.
 ## 1) Stack (Locked — no substitutions)
 
 **Core**
-- Expo SDK 52 (pinned), React Native (SDK 52), TypeScript strict
+- Expo SDK 54 (latest stable), React Native (SDK 54), TypeScript strict
 - Expo Router (SDK‑compatible), EAS Build/Submit/Update day‑1
 - `app.config.ts` (no `app.json`)
 - Path alias: `@/* → ./src/*`
@@ -64,7 +64,7 @@ Planner agents must follow it exactly. No deviations without explicit approval.
 
 **UI**
 - `@expo/vector-icons`
-- `react-native-reanimated` + `react-native-gesture-handler` (from SDK 52)
+- `react-native-reanimated` + `react-native-gesture-handler` (from SDK 54)
 - Styling: `StyleSheet` + `@/theme`; no Tailwind/NativeWind
 
 **Testing**
@@ -86,7 +86,7 @@ Planner agents must follow it exactly. No deviations without explicit approval.
 9. Env vars only via `@/lib/config`; client uses `EXPO_PUBLIC_*`.
 10. V1 online‑first; no offline mutation queue.
 11. Deep links: `scheduleapp://` + `https://yourapp.com/app/` in `app.config.ts`.
-12. Expo SDK pinned; no deps requiring SDK 53+.
+12. Expo SDK 54; no deps requiring SDK 55+.
 13. No new dependencies without explicit approval.
 
 ---
